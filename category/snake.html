@@ -1,1479 +1,4048 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" data-theme="light">
+
 <head>
-<meta charset="utf-8">
-<title>Snake - Unblocked Games 66</title>
-<meta name="description" content="Snake - Cool play unblocked games 66 easy at school">
+    <title>Snake - Unblocked Games 66</title>
+    <meta name="description" content="Snake - Cool play unblocked games 66 easy at school">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#121217">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="HandheldFriendly" content="True">
+    <meta http-equiv="cleartype" content="on">
+    <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/Inter-Regular.woff2?v=3.19" crossorigin="anonymous">
+    <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/Inter-SemiBold.woff2?v=3.19" crossorigin="anonymous">
+    <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/Inter-Medium.woff2?v=3.19" crossorigin="anonymous">
+    <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/Inter-Bold.woff2?v=3.19" crossorigin="anonymous">
+    <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/Inter-ExtraBold.woff2?v=3.19" crossorigin="anonymous">
 
-<!-- Stylesheets -->
-<link href="/assets/css/bootstrap.css" rel="stylesheet">
-<link href="/assets/css/style.css" rel="stylesheet">
-<link href="/assets/css/responsive.css" rel="stylesheet">
+    <link rel="preload" as="style" href="/assets/theme/css/theme.css?v=1.0.0" />
+    <link rel="preload" as="script" href="/assets/theme/js/jquery.min.js?v=1.0.0" />
+    <link media="all" rel="stylesheet" href="/assets/theme/css/theme.css?v=1.0.0" type="text/css">
+    <link rel="shortcut icon" href="/assets/static/favicon.svg?v=1.0.0">
+    <script type="text/javascript">
+    var Base = "/";
+    var Assets = "/assets";
+        var _Auth = false;
+        var __ = function(msgid) {
+        return window.i18n[msgid] || msgid;
+    };
+    window.i18n = {
+        'more': 'more',
+        'less': 'less',
+        'No comments yet': 'No comments yet',
+    };
+    </script>
+	 <script type="text/javascript">
+   document.addEventListener("keydown", function(event) {
+  if (event.keyCode === 38 || event.keyCode === 40) { // up or down arrow key
+    event.preventDefault(); // prevent default scrolling behavior
+  }
+});
+    </script>
+    <style type="text/css">
+    :root {
+        --theme-color: #300a8a;
+        --xp-color: #4d8ef7;
+        ;
+    }
 
-<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
-<link rel="icon" type="image/x-icon" href="https://ssl.gstatic.com/classroom/favicon.png">
-<!-- Responsive -->
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	 .social-button {
+    display: inline-block;
+    margin: 10px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .social-button img {
+    width: 20px;
+    height: 20px;
+    transition: transform 0.3s ease-in-out;
+	border:1px black;
+
+  }
+
+  .social-button:hover img {
+    transform: scale(1.1);
+  }
+
+  .social-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .social-button:hover .social-overlay {
+    opacity: 1;
+  }
+
+  .social-icon {
+    color: white;
+    font-size: 14px;
+  }
+
+
+
+    </style>
+
 </head>
 
-<body>
+<body class="min-vh-100 layout d-flex flex-column">
+    <nav class="navbar navbar-expand-lg layout-header navbar-light">
+    <div class="container-fluid">
+        <button class="navbar-toggler border-0 shadow-none px-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a href="/" class="navbar-brand dark-logo me-lg-4">
+            <img src="/assets/static/logo.png" height="30" alt="Unblocked Games 66">
+        </a>
+        <a href="/" class="navbar-brand light-logo me-lg-4">
+            <img src="/assets/static/dark_logo.png" height="30" alt="Unblocked Games 66">
+        </a>
+        <button class="navbar-toggler border-0 shadow-none px-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <svg width="24" height="24" stroke="currentColor" stroke-width="1.75" fill="none">
+                <use xlink:href="/assets/sprite/sprite.svg#search"></use>
+            </svg>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar">
 
-<div class="page-wrapper">
-
-
-
-  <!-- Main Header -->
-    <header class="main-header">
-
-        <!-- Header Lower -->
-        <div class="header-lower">
-
-      <div class="auto-container">
-        <div class="inner-container d-flex justify-content-between align-items-center">
-
-          <div class="logo-box d-flex align-items-center">
-
-
-
-            <!-- Logo -->
-            <div class="logo"><a href="/"><strong>Unblocked Games 66</strong></a></div>
-          </div>
-          <div class="nav-outer clearfix">
-
-            <!-- Main Menu -->
-            <nav class="main-menu show navbar-expand-md">
-              <div class="navbar-header">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                </button>
-              </div>
-
-              <div class="navbar-collapse collapse clearfix" id="navbarSupportedContent">
-
-                <ul class="navigation clearfix">                  
-                  
-                  
-                    
-                    <li><a href="/category/new.html">New</a></li>                    
-                    
-                  
-                    
-                    <li><a href="/category/hot.html">Hot</a></li>                    
-                    
-                  
-                    
-                    <li><a href="/category/action.html">Action</a></li>                    
-                    
-                  
-                    
-                    <li><a href="/category/sport.html">Sport</a></li>                    
-                    
-                  
-                    
-                    <li><a href="/category/strategy.html">Strategy</a></li>                    
-                    
-                  
-                    
-                    <li><a href="/category/adventure.html">Adventure</a></li>                    
-                    
-                      <li class="nav-item dropdown"><a href="#" data-bs-toggle="dropdown">More</a>
-                        <ul role="menu" class="dropdown-menu">
-                    
-                  
-                    
-                    <li><a href="/category/halloween.html">Halloween</a></li>                    
-                    
-                  
-                    
-                    <li><a href="/category/multiplayer.html">Multiplayer</a></li>                    
-                    
-                  
-                    
-                    <li><a href="/category/puzzle.html">Puzzle</a></li>                    
-                    
-                  
-                    
-                    <li><a href="/category/snake.html">Snake</a></li>                    
-                    
-                  
-                  
-                        </ul>
-                      </li>
-                  
-                </ul>
-              </div>
-
-            </nav>
-            <!-- Main Menu End-->
-
-          </div>
-
-
-          <!-- Outer Box -->
-
-          <!-- End Outer Box -->
-
-
-
+        <div class="category-btn">
+            <a href="/category/new.html">New</a>
+            <a href="/category/trending.html">Trending</a>
         </div>
 
-      </div>
+
+
+
+
+   <a href="#" target="_blank" title="Join Us on Discord"><div class="social-button">
+      <img src="/assets/icons/discord.svg" alt="Follow Us on Discord">
+    <div class="social-overlay">
+      <i class="social-icon fab fa-discord"></i>
+    </div>
+  </div></a>
+
+ <a href="#" target="_blank" title="Follow Me on Instagram"  ><div class="social-button">
+    <img src="/assets/icons/instagram.svg" alt="Follow Us on Instagram">
+    <div class="social-overlay">
+      <i class="social-icon fab fa-instagram"></i>
+    </div>
+  </div></a>
+
+
+
+
+
+
+
+            <form class="form-search w-xxl-300 w-xl-250 ms-xl-4 mb-3 mb-lg-0" action="/search.html" method="get">
+                <!-- <input type="hidden" name="_TOKEN" value="JDJ5JDEwJG9jVGRELllnaUlsWmZPZllYNENYUHV6NG5CMkNpR2JiODVnRU1DaXp5UC91aWJlcDJCZVUy">
+                <input type="hidden" name="_ACTION" value="search"> -->
+                <div class="input-group input-group-inline shadow-none">
+                    <span class="input-group-text bg-transparent border-0 text-gray-500 shadow-none ps-0 pe-3">
+                        <svg width="18" height="18" stroke="currentColor" stroke-width="1.75" fill="none">
+                            <use xlink:href="/assets/sprite/sprite.svg#search"></use>
+                        </svg>
+                    </span>
+                    <input type="text" name="q" class="form-control form-control-flush bg-transparent border-0 ps-0" id="search" placeholder="Text to search..." aria-label="Search" required="true" minlength="3">
+                </div>
+            </form>
+            <ul class="navbar-nav mb-2 mb-lg-0 fw-semibold align-items-xl-center ms-xl-auto">
+
+
+
+
+
+
+                <li class="nav-item">
+                    <a href="#leaderboard" class="nav-link" data-bs-tooltip="tooltip" data-bs-placement="bottom" title="Leaderboard">
+                        <svg width="16" height="16" fill="currentColor">
+                            <use xlink:href="/assets/sprite/sprite.svg#leader"></use>
+                        </svg>
+                    </a>
+                </li>
+                                <li class="nav-item">
+                    <a rel="nofollow"  href="#login" class="nav-link fs-sm fw-normal">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a rel="nofollow" href="#register" class="nav-link fs-sm fw-normal">Register</a>
+                </li>
+                            </ul>
         </div>
-        <!-- End Header Lower -->
-
-    <!-- Sticky Header  -->
-        <div class="sticky-header">
-            <div class="auto-container">
-        <div class="d-flex justify-content-between align-items-center">
-          <!-- Logo -->
-          <div class="logo">
-            <a href="/" title=""><strong>Unblocked Games 66</strong></a>
-          </div>
-
-          <!-- Right Col -->
-          <div class="right-box">
-            <!-- Main Menu -->
-            <nav class="main-menu">
-              <!--Keep This Empty / Menu will come through Javascript-->
-            </nav>
-            <!-- Main Menu End-->
-
-            <!-- Mobile Navigation Toggler -->
-            <div class="mobile-nav-toggler"><span class="icon flaticon-menu"></span></div>
-          </div>
-
-        </div>
-            </div>
-        </div>
-    <!-- End Sticky Menu -->
-
-    <!-- Mobile Menu  -->
-        <div class="mobile-menu">
-            <div class="menu-backdrop"></div>
-            <div class="close-btn"><span class="icon flaticon-multiply"></span></div>
-            <nav class="menu-box">
-                <div class="nav-logo"><a href="/"><strong>Classroom 6x</strong></a></div>
-        <!-- Search -->
-
-                <div class="menu-outer"><!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header--></div>
-            </nav>
-        </div>
-    <!-- End Mobile Menu -->
-
-    </header>
-    <!-- End Main Header -->
-
-    	<!-- Products Section Three -->
-	<section class="products-section-three">
-		<div class="auto-container">
-			<!-- Sec Title -->
-			<div class="sec-title">
-				<h4>Snake</h4>        
-			</div>
-
-			<!-- MixitUp Galery -->
-      <div class="mixitup-gallery">
-          <div class="filter-list row clearfix">            
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                                   
-                <div class="shop-item mix  photography col-lg-2 col-md-6 col-sm-12">
-                  <div class="inner-box">
-                    <div class="image">
-                      <a href="/game/chompersio.html"><img src="/assets/img/thumbs/chompersio.png" alt="Chompers.io" /></a>
-                    </div>
-                    <div class="lower-content">
-                      <h6><a href="/game/chompersio.html">Chompers.io</a></h6>
-                      <div class="d-flex justify-content-between align-items-center">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                                   
-                <div class="shop-item mix  photography col-lg-2 col-md-6 col-sm-12">
-                  <div class="inner-box">
-                    <div class="image">
-                      <a href="/game/gulperio.html"><img src="/assets/img/thumbs/gulperio.png" alt="Gulper.io" /></a>
-                    </div>
-                    <div class="lower-content">
-                      <h6><a href="/game/gulperio.html">Gulper.io</a></h6>
-                      <div class="d-flex justify-content-between align-items-center">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                                   
-                <div class="shop-item mix  photography col-lg-2 col-md-6 col-sm-12">
-                  <div class="inner-box">
-                    <div class="image">
-                      <a href="/game/happy-snakes.html"><img src="/assets/img/thumbs/happy-snakes.png" alt="Happy Snakes" /></a>
-                    </div>
-                    <div class="lower-content">
-                      <h6><a href="/game/happy-snakes.html">Happy Snakes</a></h6>
-                      <div class="d-flex justify-content-between align-items-center">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                                   
-                <div class="shop-item mix  photography col-lg-2 col-md-6 col-sm-12">
-                  <div class="inner-box">
-                    <div class="image">
-                      <a href="/game/limaxio.html"><img src="/assets/img/thumbs/limaxio.png" alt="Limax.io" /></a>
-                    </div>
-                    <div class="lower-content">
-                      <h6><a href="/game/limaxio.html">Limax.io</a></h6>
-                      <div class="d-flex justify-content-between align-items-center">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                          
-            
-                          
-            
-                                   
-                <div class="shop-item mix  photography col-lg-2 col-md-6 col-sm-12">
-                  <div class="inner-box">
-                    <div class="image">
-                      <a href="/game/little-big-snake.html"><img src="/assets/img/thumbs/little-big-snake.png" alt="Little Big Snake" /></a>
-                    </div>
-                    <div class="lower-content">
-                      <h6><a href="/game/little-big-snake.html">Little Big Snake</a></h6>
-                      <div class="d-flex justify-content-between align-items-center">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                                   
-                <div class="shop-item mix  photography col-lg-2 col-md-6 col-sm-12">
-                  <div class="inner-box">
-                    <div class="image">
-                      <a href="/game/paperio-2.html"><img src="/assets/img/thumbs/paperio-2.png" alt="Paper.io 2" /></a>
-                    </div>
-                    <div class="lower-content">
-                      <h6><a href="/game/paperio-2.html">Paper.io 2</a></h6>
-                      <div class="d-flex justify-content-between align-items-center">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                                   
-                <div class="shop-item mix  photography col-lg-2 col-md-6 col-sm-12">
-                  <div class="inner-box">
-                    <div class="image">
-                      <a href="/game/real-snakes.html"><img src="/assets/img/thumbs/real-snakes.png" alt="Real Snakes" /></a>
-                    </div>
-                    <div class="lower-content">
-                      <h6><a href="/game/real-snakes.html">Real Snakes</a></h6>
-                      <div class="d-flex justify-content-between align-items-center">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                                   
-                <div class="shop-item mix  photography col-lg-2 col-md-6 col-sm-12">
-                  <div class="inner-box">
-                    <div class="image">
-                      <a href="/game/slither-dragonio.html"><img src="/assets/img/thumbs/slither-dragonio.png" alt="Slither Dragon.io" /></a>
-                    </div>
-                    <div class="lower-content">
-                      <h6><a href="/game/slither-dragonio.html">Slither Dragon.io</a></h6>
-                      <div class="d-flex justify-content-between align-items-center">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                          
-            
-                          
-            
-                          
-            
-                                   
-                <div class="shop-item mix  photography col-lg-2 col-md-6 col-sm-12">
-                  <div class="inner-box">
-                    <div class="image">
-                      <a href="/game/slitherio.html"><img src="/assets/img/thumbs/slitherio.png" alt="Slither.io" /></a>
-                    </div>
-                    <div class="lower-content">
-                      <h6><a href="/game/slitherio.html">Slither.io</a></h6>
-                      <div class="d-flex justify-content-between align-items-center">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                                   
-                <div class="shop-item mix  photography col-lg-2 col-md-6 col-sm-12">
-                  <div class="inner-box">
-                    <div class="image">
-                      <a href="/game/snake-io-war.html"><img src="/assets/img/thumbs/snake-io-war.png" alt="Snake io war" /></a>
-                    </div>
-                    <div class="lower-content">
-                      <h6><a href="/game/snake-io-war.html">Snake io war</a></h6>
-                      <div class="d-flex justify-content-between align-items-center">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                          
-            
-                                   
-                <div class="shop-item mix  photography col-lg-2 col-md-6 col-sm-12">
-                  <div class="inner-box">
-                    <div class="image">
-                      <a href="/game/snake-io.html"><img src="/assets/img/thumbs/snake-io.png" alt="Snake IO" /></a>
-                    </div>
-                    <div class="lower-content">
-                      <h6><a href="/game/snake-io.html">Snake IO</a></h6>
-                      <div class="d-flex justify-content-between align-items-center">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                                   
-                <div class="shop-item mix  photography col-lg-2 col-md-6 col-sm-12">
-                  <div class="inner-box">
-                    <div class="image">
-                      <a href="/game/superhexio.html"><img src="/assets/img/thumbs/superhexio.png" alt="Superhex.io" /></a>
-                    </div>
-                    <div class="lower-content">
-                      <h6><a href="/game/superhexio.html">Superhex.io</a></h6>
-                      <div class="d-flex justify-content-between align-items-center">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                                   
-                <div class="shop-item mix  photography col-lg-2 col-md-6 col-sm-12">
-                  <div class="inner-box">
-                    <div class="image">
-                      <a href="/game/sushi-party.html"><img src="/assets/img/thumbs/sushi-party.png" alt="Sushi Party" /></a>
-                    </div>
-                    <div class="lower-content">
-                      <h6><a href="/game/sushi-party.html">Sushi Party</a></h6>
-                      <div class="d-flex justify-content-between align-items-center">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                                   
-                <div class="shop-item mix  photography col-lg-2 col-md-6 col-sm-12">
-                  <div class="inner-box">
-                    <div class="image">
-                      <a href="/game/tilemanio.html"><img src="/assets/img/thumbs/tilemanio.png" alt="TileMan.io" /></a>
-                    </div>
-                    <div class="lower-content">
-                      <h6><a href="/game/tilemanio.html">TileMan.io</a></h6>
-                      <div class="d-flex justify-content-between align-items-center">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                                   
-                <div class="shop-item mix  photography col-lg-2 col-md-6 col-sm-12">
-                  <div class="inner-box">
-                    <div class="image">
-                      <a href="/game/wormateio.html"><img src="/assets/img/thumbs/wormateio.png" alt="Wormate.io" /></a>
-                    </div>
-                    <div class="lower-content">
-                      <h6><a href="/game/wormateio.html">Wormate.io</a></h6>
-                      <div class="d-flex justify-content-between align-items-center">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                                   
-                <div class="shop-item mix  photography col-lg-2 col-md-6 col-sm-12">
-                  <div class="inner-box">
-                    <div class="image">
-                      <a href="/game/wormszone.html"><img src="/assets/img/thumbs/wormszone.png" alt="Worms.Zone" /></a>
-                    </div>
-                    <div class="lower-content">
-                      <h6><a href="/game/wormszone.html">Worms.Zone</a></h6>
-                      <div class="d-flex justify-content-between align-items-center">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-                          
-            
-          </div>
-      </div>
-		</div>
-	</section>
-	<!-- End Products Section Three -->
+    </div>
+</nav>
 
 
-	<!-- Main Footer -->
-    <footer class="main-footer">
-		<div class="pattern-layer-one" style="background-image: url(/assets/icons/pattern-3.png)"></div>
-		<div class="pattern-layer-two" style="background-image: url(/assets/icons/vector-2.png)"></div>
-		<div class="auto-container">
+<div class="py-1">
+</div>
 
-			<!-- Widgets Section -->
+<div class="layout-section">
+    <div class="container-fluid">
+        <div class="layout-heading mb-4">
+            <div>
+                <h1 class="h2">SNAKE GAMES</h1>
+                <div class="fs-sm text-muted"><p>You’ll find this post in your <code class="language-plaintext highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code class="language-plaintext highlighter-rouge">jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
 
+<p>Jekyll requires blog post files to be named according to the following format:</p>
 
-			<!-- Footer Bottom -->
-			<div class="footer-bottom">
-				<div class="d-flex justify-content-between align-items-center flex-wrap">
-					<div class="copyright">Unblocked Games 66 - Play 514 games for free!</div>
-					<!-- <div class="cards"><img src="images/icons/cards.png" alt="" /></div> -->
-				</div>
-			</div>
+<p><code class="language-plaintext highlighter-rouge">YEAR-MONTH-DAY-title.MARKUP</code></p>
 
-		</div>
-	</footer>
-	<!-- End Main Footer -->
+<p>Where <code class="language-plaintext highlighter-rouge">YEAR</code> is a four-digit number, <code class="language-plaintext highlighter-rouge">MONTH</code> and <code class="language-plaintext highlighter-rouge">DAY</code> are both two-digit numbers, and <code class="language-plaintext highlighter-rouge">MARKUP</code> is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.</p>
+
+<p>Jekyll also offers powerful support for code snippets:</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">print_hi</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>
+  <span class="nb">puts</span> <span class="s2">"Hi, </span><span class="si">#{</span><span class="nb">name</span><span class="si">}</span><span class="s2">"</span>
+<span class="k">end</span>
+<span class="n">print_hi</span><span class="p">(</span><span class="s1">'Tom'</span><span class="p">)</span>
+<span class="c1">#=&gt; prints 'Hi, Tom' to STDOUT.</span></code></pre></figure>
+
+<p>Check out the <a href="https://jekyllrb.com/docs/home">Jekyll docs</a> for more info on how to get the most out of Jekyll. File all bugs/feature requests at <a href="https://github.com/jekyll/jekyll">Jekyll’s GitHub repo</a>. If you have questions, you can ask them on <a href="https://talk.jekyllrb.com/">Jekyll Talk</a>.</p>
 
 </div>
-<!-- End PageWrapper -->
+            </div>
+        </div>
+        <div class="card-masonry mb-4">
+            
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+        
+        <a href="/game/chompersio.html" class="card large">
+            <picture>
+                <source data-srcset="/assets/upload/c6g/chompersio.png" type="image/png" class="img-fluid" srcset="/assets/upload/c6g/chompersio.png">
+                <img data-src="/assets/upload/c6g/chompersio.png" alt="Chompers.io" class="lazyload img-fluid" width="500" height="500">
+            </picture>
+            <div class="card-body">
+            <h3>Chompers.io</h3>
+            </div>
+        </a>
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+        
+        <a href="/game/gulperio.html" class="card large">
+            <picture>
+                <source data-srcset="/assets/upload/c6g/gulperio.png" type="image/png" class="img-fluid" srcset="/assets/upload/c6g/gulperio.png">
+                <img data-src="/assets/upload/c6g/gulperio.png" alt="Gulper.io" class="lazyload img-fluid" width="500" height="500">
+            </picture>
+            <div class="card-body">
+            <h3>Gulper.io</h3>
+            </div>
+        </a>
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+        
+        <a href="/game/happy-snakes.html" class="card large">
+            <picture>
+                <source data-srcset="/assets/upload/c6g/happy-snakes.png" type="image/png" class="img-fluid" srcset="/assets/upload/c6g/happy-snakes.png">
+                <img data-src="/assets/upload/c6g/happy-snakes.png" alt="Happy Snakes" class="lazyload img-fluid" width="500" height="500">
+            </picture>
+            <div class="card-body">
+            <h3>Happy Snakes</h3>
+            </div>
+        </a>
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+        
+        <a href="/game/limaxio.html" class="card large">
+            <picture>
+                <source data-srcset="/assets/upload/c6g/limaxio.png" type="image/png" class="img-fluid" srcset="/assets/upload/c6g/limaxio.png">
+                <img data-src="/assets/upload/c6g/limaxio.png" alt="Limax.io" class="lazyload img-fluid" width="500" height="500">
+            </picture>
+            <div class="card-body">
+            <h3>Limax.io</h3>
+            </div>
+        </a>
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+        
+        <a href="/game/little-big-snake.html" class="card large">
+            <picture>
+                <source data-srcset="/assets/upload/c6g/little-big-snake.png" type="image/png" class="img-fluid" srcset="/assets/upload/c6g/little-big-snake.png">
+                <img data-src="/assets/upload/c6g/little-big-snake.png" alt="Little Big Snake" class="lazyload img-fluid" width="500" height="500">
+            </picture>
+            <div class="card-body">
+            <h3>Little Big Snake</h3>
+            </div>
+        </a>
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+        
+        <a href="/game/paperio-2.html" class="card large">
+            <picture>
+                <source data-srcset="/assets/upload/c6g/paperio-2.png" type="image/png" class="img-fluid" srcset="/assets/upload/c6g/paperio-2.png">
+                <img data-src="/assets/upload/c6g/paperio-2.png" alt="Paper.io 2" class="lazyload img-fluid" width="500" height="500">
+            </picture>
+            <div class="card-body">
+            <h3>Paper.io 2</h3>
+            </div>
+        </a>
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+        
+        <a href="/game/real-snakes.html" class="card large">
+            <picture>
+                <source data-srcset="/assets/upload/c6g/real-snakes.png" type="image/png" class="img-fluid" srcset="/assets/upload/c6g/real-snakes.png">
+                <img data-src="/assets/upload/c6g/real-snakes.png" alt="Real Snakes" class="lazyload img-fluid" width="500" height="500">
+            </picture>
+            <div class="card-body">
+            <h3>Real Snakes</h3>
+            </div>
+        </a>
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+        
+        <a href="/game/slither-dragonio.html" class="card large">
+            <picture>
+                <source data-srcset="/assets/upload/c6g/slither-dragonio.png" type="image/png" class="img-fluid" srcset="/assets/upload/c6g/slither-dragonio.png">
+                <img data-src="/assets/upload/c6g/slither-dragonio.png" alt="Slither Dragon.io" class="lazyload img-fluid" width="500" height="500">
+            </picture>
+            <div class="card-body">
+            <h3>Slither Dragon.io</h3>
+            </div>
+        </a>
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+        
+        <a href="/game/slitherio.html" class="card large">
+            <picture>
+                <source data-srcset="/assets/upload/c6g/slitherio.png" type="image/png" class="img-fluid" srcset="/assets/upload/c6g/slitherio.png">
+                <img data-src="/assets/upload/c6g/slitherio.png" alt="Slither.io" class="lazyload img-fluid" width="500" height="500">
+            </picture>
+            <div class="card-body">
+            <h3>Slither.io</h3>
+            </div>
+        </a>
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+        
+        <a href="/game/snake-io-war.html" class="card large">
+            <picture>
+                <source data-srcset="/assets/upload/c6g/snake-io-war.png" type="image/png" class="img-fluid" srcset="/assets/upload/c6g/snake-io-war.png">
+                <img data-src="/assets/upload/c6g/snake-io-war.png" alt="Snake io war" class="lazyload img-fluid" width="500" height="500">
+            </picture>
+            <div class="card-body">
+            <h3>Snake io war</h3>
+            </div>
+        </a>
+  
+
+    
+    
+    
+    
+    
+    
+        
+        <a href="/game/snake-io.html" class="card large">
+            <picture>
+                <source data-srcset="/assets/upload/c6g/snake-io.png" type="image/png" class="img-fluid" srcset="/assets/upload/c6g/snake-io.png">
+                <img data-src="/assets/upload/c6g/snake-io.png" alt="Snake IO" class="lazyload img-fluid" width="500" height="500">
+            </picture>
+            <div class="card-body">
+            <h3>Snake IO</h3>
+            </div>
+        </a>
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+        
+        <a href="/game/superhexio.html" class="card large">
+            <picture>
+                <source data-srcset="/assets/upload/c6g/superhexio.png" type="image/png" class="img-fluid" srcset="/assets/upload/c6g/superhexio.png">
+                <img data-src="/assets/upload/c6g/superhexio.png" alt="Superhex.io" class="lazyload img-fluid" width="500" height="500">
+            </picture>
+            <div class="card-body">
+            <h3>Superhex.io</h3>
+            </div>
+        </a>
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+        
+        <a href="/game/sushi-party.html" class="card large">
+            <picture>
+                <source data-srcset="/assets/upload/c6g/sushi-party.png" type="image/png" class="img-fluid" srcset="/assets/upload/c6g/sushi-party.png">
+                <img data-src="/assets/upload/c6g/sushi-party.png" alt="Sushi Party" class="lazyload img-fluid" width="500" height="500">
+            </picture>
+            <div class="card-body">
+            <h3>Sushi Party</h3>
+            </div>
+        </a>
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+        
+        <a href="/game/tilemanio.html" class="card large">
+            <picture>
+                <source data-srcset="/assets/upload/c6g/tilemanio.png" type="image/png" class="img-fluid" srcset="/assets/upload/c6g/tilemanio.png">
+                <img data-src="/assets/upload/c6g/tilemanio.png" alt="TileMan.io" class="lazyload img-fluid" width="500" height="500">
+            </picture>
+            <div class="card-body">
+            <h3>TileMan.io</h3>
+            </div>
+        </a>
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+        
+        <a href="/game/wormateio.html" class="card large">
+            <picture>
+                <source data-srcset="/assets/upload/c6g/wormateio.png" type="image/png" class="img-fluid" srcset="/assets/upload/c6g/wormateio.png">
+                <img data-src="/assets/upload/c6g/wormateio.png" alt="Wormate.io" class="lazyload img-fluid" width="500" height="500">
+            </picture>
+            <div class="card-body">
+            <h3>Wormate.io</h3>
+            </div>
+        </a>
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+        
+        <a href="/game/wormszone.html" class="card large">
+            <picture>
+                <source data-srcset="/assets/upload/c6g/wormszone.png" type="image/png" class="img-fluid" srcset="/assets/upload/c6g/wormszone.png">
+                <img data-src="/assets/upload/c6g/wormszone.png" alt="Worms.Zone" class="lazyload img-fluid" width="500" height="500">
+            </picture>
+            <div class="card-body">
+            <h3>Worms.Zone</h3>
+            </div>
+        </a>
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+
+        </div>
+  </div>
+</div>
 
 
 
-<!-- Scroll To Top -->
-<div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-arrow-up"></span></div>
-
-<script src="/assets/js/jquery.js"></script>
-<script src="/assets/js/popper.min.js"></script>
-<script src="/assets/js/bootstrap.min.js"></script>
-<script src="/assets/js/magnific-popup.min.js"></script>
-<script src="/assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
-<script src="/assets/js/appear.js"></script>
-<script src="/assets/js/parallax.min.js"></script>
-<script src="/assets/js/tilt.jquery.min.js"></script>
-<script src="/assets/js/jquery.paroller.min.js"></script>
-<script src="/assets/js/owl.js"></script>
-<script src="/assets/js/wow.js"></script>
-<script src="/assets/js/swiper.min.js"></script>
-<script src="/assets/js/touchspin.js"></script>
-<script src="/assets/js/odometer.js"></script>
-<script src="/assets/js/mixitup.js"></script>
-<script src="/assets/js/backToTop.js"></script>
-<script src="/assets/js/jquery.marquee.min.js"></script>
-<!-- <script src="/assets/js/nav-tool.js"></script> -->
-<script src="/assets/js/jquery-ui.js"></script>
-<script src="/assets/js/script.js"></script>
-<script src="/assets/js/analytics_ubg235_v1_0.js"></script>
+<script defer="" src="/assets/theme/js/jquery.min.js?v=1.0.0"></script>
+<script defer="" src="/assets/theme/js/bootstrap.js?v=1.0.0"></script>
+<script defer="" src="/assets/theme/js/lazysizes.js?v=1.0.0"></script>
+<script defer="" src="/assets/theme/js/main.js?v=1.0.0"></script> <div class="footer py-2 mt-auto">
+    <div class="container-fluid">
+        <div class="row align-items-center no-gutters py-2 fs-14">
+            <!-- Desc -->
+            <div class="col-lg-4 col-md-5 col-12">
+                <div class="fs-xs text-muted">
+                    Copyright © 2024 Unblocked Games 66. All rights reserved.<br>
+                    Just play Games / AI ROYALE
+                </div>
+            </div>
+            <!-- Links -->
+            <div class="col-12 col-md-7 col-lg-8 d-md-flex justify-content-end">
+               <nav class="nav fs-xs text-muted">
+                    <a class="nav-link text-current" href="/">Home</a>
+                    <a class="nav-link text-current" rel="nofollow" href="/privacy-policy.html">Privacy Policy</a>
+                    <a class="nav-link text-current" rel="nofollow" href="/terms-and-conditions.html">Terms and Conditions</a>
+                    <a class="nav-link text-current" rel="nofollow" href="/contact.html">Contact</a>
+                    <a class="nav-link text-current" href="/sitemaps.xml">Sitemaps</a>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal" id="xl" tabindex="-1" aria-labelledby="modal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content">
+        </div>
+    </div>
+</div>
+<div class="modal" id="lg" tabindex="-1" aria-labelledby="modal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+        </div>
+    </div>
+</div>
+<div class="modal" id="m" tabindex="-1" aria-labelledby="modal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+        </div>
+    </div>
+</div>
+<div class="modal" id="sm" tabindex="-1" aria-labelledby="modal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-sm">
+        <div class="modal-content">
+        </div>
+    </div>
+</div>
 </body>
+
 </html>
