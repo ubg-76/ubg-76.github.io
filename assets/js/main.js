@@ -1,49 +1,58 @@
-let slideIndex = 0;
+function initMenu() {
+const nav = document.querySelector("nav.greedy");
+const btn = nav.querySelector("button");
+const vlinks = nav.querySelector(".links");
+const hlinks = nav.querySelector(".hidden-links");
 
-function showSlide(index) {
-    const slides = document.querySelector('.slides');
-    const slideWidth = document.querySelector('.slide').offsetWidth;
-    const visibleSlides = 5; // Hiển thị 5 sản phẩm trên một hàng
-    const totalSlides = document.querySelectorAll('.slide').length;
+let numOfItems = 0;
+let totalSpace = 0;
+const breakWidths = [];
 
-    if (index >= totalSlides - visibleSlides + 1) {
-        slideIndex = 0; // Quay về slide đầu tiên khi đến slide cuối
-    } else if (index < 0) {
-        slideIndex = totalSlides - visibleSlides; // Quay về slide cuối cùng khi về trước quá nhiều
-    } else {
-        slideIndex = index;
-    }
+// Calculate the total width of visible links
+Array.from(vlinks.children).forEach((child) => {
+  const width = child.offsetWidth;
+  totalSpace += width;
+  numOfItems += 1;
+  breakWidths.push(totalSpace);
+});
 
-    slides.style.transform = `translateX(-${slideIndex * slideWidth}px)`;
+let availableSpace, numOfVisibleItems, requiredSpace;
+
+function check() {
+  availableSpace = vlinks.clientWidth - 10; // Subtracting some padding
+  numOfVisibleItems = vlinks.children.length;
+  requiredSpace = breakWidths[numOfVisibleItems - 1];
+
+  if (requiredSpace > availableSpace) {
+    // Move last item to hidden links
+    hlinks.insertBefore(vlinks.lastElementChild, hlinks.firstChild);
+    numOfVisibleItems -= 1;
+    check();
+  } else if (availableSpace > breakWidths[numOfVisibleItems]) {
+    // Move first hidden item to visible links
+    vlinks.appendChild(hlinks.firstElementChild);
+    numOfVisibleItems += 1;
+  }
+
+  // Update button count and visibility
+  btn.setAttribute("count", numOfItems - numOfVisibleItems);
+  if (numOfVisibleItems === numOfItems) {
+    btn.classList.add("hidden");
+  } else {
+    btn.classList.remove("hidden");
+  }
 }
 
-function nextSlide() {
-    showSlide(slideIndex + 1);
+// Resize event listener
+window.addEventListener("resize", check);
+
+// Button click event listener
+btn.addEventListener("click", () => {
+  hlinks.classList.toggle("hidden");
+});
+
+// Initial check
+check();
 }
 
-function prevSlide() {
-    showSlide(slideIndex - 1);
-}
-
-if(document.querySelector('.slides') != undefined){
-// Khởi tạo slide đầu tiên
-showSlide(slideIndex);    
-}
-
-
-//khi lan chuot xuong > 100px thi hien button
-window.onscroll = function() {
-    var button = document.querySelector('.scroll-to-top');
-    if (document.documentElement.scrollTop > 100) {
-        button.style.display = 'flex';
-    } else {
-        button.style.display = 'none';
-    }
-};
-
-function scrollToTop(){
-     window.scrollTo({ top: 0, behavior: 'smooth' });
-}
-
-
-
+initMenu();
