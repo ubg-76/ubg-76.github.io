@@ -274,8 +274,8 @@ h3.item-title {
 }
 
 .item-grid {
-  padding-right: 10px;
-  padding-left: 10px;
+  padding-right: 10px !important;
+  padding-left: 10px !important;
 }
 
 .list-game {
@@ -451,7 +451,18 @@ footer i, footer svg {
   justify-content: space-between;
   align-items: center;
   padding: 15px;
-  margin-bottom: 20px;
+}
+
+@media (min-width: 1400px) {
+  .game-iframe-container {
+    /*padding-top: 58.25% !important;*/
+  }
+}
+
+@media (min-width: 1400px) {
+  .single-info-container {
+    /*padding: 20px 15px;*/
+  }
 }
 
 .header-left {
@@ -542,12 +553,29 @@ h1.single-title {
 }
 
 .sidebar .row {
-  margin-right: 0;
-  margin-left: 0;
+  /*margin-right: 0;*/
+  /*margin-left: 0;*/
 }
 
-.sidebar .list-game {
-  margin-bottom: 8px;
+@media (min-width: 992px) {
+  .sidebar .list-game {
+    margin-bottom: 15px;
+  }
+}
+
+@media (min-width: 768px) and (max-width:991px) {
+  .item-right {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+    width: 12.5%;
+  }
+}
+
+@media (max-width: 768px) {
+  .item-right {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
 }
 
 .singlepage-title {
